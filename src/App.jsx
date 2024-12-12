@@ -1,13 +1,23 @@
+import Categorias from "./component/Categorias";
+import { Header } from "./component/Header";
+import MainPage from "./component/MainPage";
+import { Navegacion } from "./component/Navegacion";
+import SobreNosotros from "./component/SobreNosotros";
+import Footer from "./component/Footer";
 
 function App() {
 
+  const handleAddToCart = (quantity) => {
+    alert(`Has agregado ${quantity} producto(s) al carrito`);
+  };
   return (
     <>
-      <div>
-        <p>
-          Hola mundo
-        </p>
-      </div>
+      <Header/>
+      <Navegacion/>
+      <MainPage/>
+      <Categorias/>
+      <SobreNosotros/>
+      <Footer/> 
     </>
   )
 }
