@@ -1,14 +1,16 @@
+import { Link } from "react-router-dom";
+
 export const Navegacion = () => {
   return (
     <>
       <div className="contenedor-navegacion">
-        <nav class="nav-principal contenedor">
-          <a href="index.html">Inicio</a>
-          <a href="nosotros.html">Nosotros</a>
-          <a href="tienda.html">Tienda</a>
-          <a href="blog.html">Blog</a>
-          <a href="galeria.html">Galeria</a>
-          <a href="contacto.html">Contacto</a>
+        <nav className="nav-principal contenedor">
+          <Link to="/">Inicio</Link>
+          <Link to="/SobreNosotros">Nosotros</Link>
+          <Link to="/Categorias">Categorias</Link>
+          <Link to="/Blog">Blog</Link>
+          <Link to="/Galeria">Galeria</Link>
+          <Link to="/Contacto">Contacto</Link>
         </nav>
       </div>
     </>

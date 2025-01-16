@@ -13,7 +13,7 @@ const ItemCount = ({ stock = 10, initial = 1, onAdd }) => {
 
   const handleDecrement = () => {
     if (count > 1) {
-      setCount(count - 0);
+      setCount(count - 1);
     }
   };
 
